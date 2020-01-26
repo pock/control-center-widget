@@ -12,5 +12,6 @@ target 'ControlCenter' do
 
   # Pods for ControlCenter
   pod 'PockKit'
+  pod 'Defaults'
 
 end

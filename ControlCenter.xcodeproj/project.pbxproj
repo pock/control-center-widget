@@ -7,14 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345310D723DE2EC000EE3C79 /* PKSlideableController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345310D523DE2EC000EE3C79 /* PKSlideableController.xib */; };
+		345310D823DE2EC000EE3C79 /* PKSlideableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345310D623DE2EC000EE3C79 /* PKSlideableController.swift */; };
+		345310DA23DE311100EE3C79 /* login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 345310D923DE311000EE3C79 /* login.framework */; };
+		345310DB23DE311100EE3C79 /* login.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 345310D923DE311000EE3C79 /* login.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		345310E723DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.strings in Resources */ = {isa = PBXBuildFile; fileRef = 345310DE23DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.strings */; };
+		345310E823DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345310E223DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.swift */; };
+		345310E923DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345310E323DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.xib */; };
 		34691B8323D37C73008EB808 /* ControlCenterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B8223D37C73008EB808 /* ControlCenterWidget.swift */; };
+		34691B8B23D38C4D008EB808 /* ControlCenterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B8A23D38C4D008EB808 /* ControlCenterItem.swift */; };
+		34691B9A23D38CBD008EB808 /* CCDoNotDisturbItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B8D23D38CBD008EB808 /* CCDoNotDisturbItem.swift */; };
+		34691B9B23D38CBD008EB808 /* CCSleepItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B8E23D38CBD008EB808 /* CCSleepItem.swift */; };
+		34691B9C23D38CBD008EB808 /* CCScreensaverItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B8F23D38CBD008EB808 /* CCScreensaverItem.swift */; };
+		34691B9D23D38CBD008EB808 /* CCLockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B9023D38CBD008EB808 /* CCLockItem.swift */; };
+		34691B9E23D38CBD008EB808 /* CCBrightnessDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B9223D38CBD008EB808 /* CCBrightnessDownItem.swift */; };
+		34691B9F23D38CBD008EB808 /* CCBrightnessUpItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B9323D38CBD008EB808 /* CCBrightnessUpItem.swift */; };
+		34691BA023D38CBD008EB808 /* CCBrightnessToggleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B9423D38CBD008EB808 /* CCBrightnessToggleItem.swift */; };
+		34691BA123D38CBD008EB808 /* CCVolumeDownItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B9623D38CBD008EB808 /* CCVolumeDownItem.swift */; };
+		34691BA223D38CBD008EB808 /* CCVolumeToggleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B9723D38CBD008EB808 /* CCVolumeToggleItem.swift */; };
+		34691BA323D38CBD008EB808 /* CCVolumeUpItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B9823D38CBD008EB808 /* CCVolumeUpItem.swift */; };
+		34691BA423D38CBD008EB808 /* CCVolumeMuteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691B9923D38CBD008EB808 /* CCVolumeMuteItem.swift */; };
+		34691BAA23D38D24008EB808 /* KeySenderHelper.c in Sources */ = {isa = PBXBuildFile; fileRef = 34691BA623D38D24008EB808 /* KeySenderHelper.c */; };
+		34691BAB23D38D24008EB808 /* KeySender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691BA823D38D24008EB808 /* KeySender.swift */; };
+		34691BB123D38D89008EB808 /* ISSoundAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34691BAE23D38D89008EB808 /* ISSoundAdditions.m */; };
+		34691BB223D38D89008EB808 /* DKBrightness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691BB023D38D89008EB808 /* DKBrightness.swift */; };
+		34691BB423D38DAF008EB808 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691BB323D38DAF008EB808 /* Preferences.swift */; };
+		34691BB923D38E36008EB808 /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34691BB823D38E36008EB808 /* SystemHelper.m */; };
+		34691BBC23D38EB3008EB808 /* PressableSegmentedControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691BBB23D38EB3008EB808 /* PressableSegmentedControler.swift */; };
+		A8D6449346F5057431535B1B /* Pods_ControlCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C3E12B2F897D3551986288 /* Pods_ControlCenter.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		345310DC23DE311100EE3C79 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				345310DB23DE311100EE3C79 /* login.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		21C3E12B2F897D3551986288 /* Pods_ControlCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		345310D523DE2EC000EE3C79 /* PKSlideableController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PKSlideableController.xib; sourceTree = "<group>"; };
+		345310D623DE2EC000EE3C79 /* PKSlideableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKSlideableController.swift; sourceTree = "<group>"; };
+		345310D923DE311000EE3C79 /* login.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = login.framework; path = ../../../../../../../../../../../System/Library/PrivateFrameworks/login.framework; sourceTree = "<group>"; };
+		345310DF23DE39F800EE3C79 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ControlCenterWidgetPreferencePane.strings"; sourceTree = "<group>"; };
+		345310E023DE39F800EE3C79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ControlCenterWidgetPreferencePane.strings; sourceTree = "<group>"; };
+		345310E123DE39F800EE3C79 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/ControlCenterWidgetPreferencePane.strings; sourceTree = "<group>"; };
+		345310E223DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCenterWidgetPreferencePane.swift; sourceTree = "<group>"; };
+		345310E423DE39F800EE3C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ControlCenterWidgetPreferencePane.xib; sourceTree = "<group>"; };
+		345310E523DE39F800EE3C79 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ControlCenterWidgetPreferencePane.strings"; sourceTree = "<group>"; };
+		345310E623DE39F800EE3C79 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/ControlCenterWidgetPreferencePane.strings; sourceTree = "<group>"; };
 		34691B7D23D37C73008EB808 /* ControlCenter.pock */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControlCenter.pock; sourceTree = BUILT_PRODUCTS_DIR; };
-		34691B8023D37C73008EB808 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		34691B8023D37C73008EB808 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		34691B8223D37C73008EB808 /* ControlCenterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterWidget.swift; sourceTree = "<group>"; };
 		34691B8423D37C73008EB808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34691B8A23D38C4D008EB808 /* ControlCenterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterItem.swift; sourceTree = "<group>"; };
+		34691B8D23D38CBD008EB808 /* CCDoNotDisturbItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCDoNotDisturbItem.swift; sourceTree = "<group>"; };
+		34691B8E23D38CBD008EB808 /* CCSleepItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSleepItem.swift; sourceTree = "<group>"; };
+		34691B8F23D38CBD008EB808 /* CCScreensaverItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCScreensaverItem.swift; sourceTree = "<group>"; };
+		34691B9023D38CBD008EB808 /* CCLockItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCLockItem.swift; sourceTree = "<group>"; };
+		34691B9223D38CBD008EB808 /* CCBrightnessDownItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCBrightnessDownItem.swift; sourceTree = "<group>"; };
+		34691B9323D38CBD008EB808 /* CCBrightnessUpItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCBrightnessUpItem.swift; sourceTree = "<group>"; };
+		34691B9423D38CBD008EB808 /* CCBrightnessToggleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCBrightnessToggleItem.swift; sourceTree = "<group>"; };
+		34691B9623D38CBD008EB808 /* CCVolumeDownItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVolumeDownItem.swift; sourceTree = "<group>"; };
+		34691B9723D38CBD008EB808 /* CCVolumeToggleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVolumeToggleItem.swift; sourceTree = "<group>"; };
+		34691B9823D38CBD008EB808 /* CCVolumeUpItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVolumeUpItem.swift; sourceTree = "<group>"; };
+		34691B9923D38CBD008EB808 /* CCVolumeMuteItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCVolumeMuteItem.swift; sourceTree = "<group>"; };
+		34691BA623D38D24008EB808 /* KeySenderHelper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KeySenderHelper.c; sourceTree = "<group>"; };
+		34691BA723D38D24008EB808 /* KeySenderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeySenderHelper.h; sourceTree = "<group>"; };
+		34691BA823D38D24008EB808 /* KeySender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySender.swift; sourceTree = "<group>"; };
+		34691BA923D38D24008EB808 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		34691BAD23D38D89008EB808 /* ISSoundAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSoundAdditions.h; sourceTree = "<group>"; };
+		34691BAE23D38D89008EB808 /* ISSoundAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSoundAdditions.m; sourceTree = "<group>"; };
+		34691BB023D38D89008EB808 /* DKBrightness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKBrightness.swift; sourceTree = "<group>"; };
+		34691BB323D38DAF008EB808 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		34691BB723D38E36008EB808 /* SystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemHelper.h; sourceTree = "<group>"; };
+		34691BB823D38E36008EB808 /* SystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemHelper.m; sourceTree = "<group>"; };
+		34691BBB23D38EB3008EB808 /* PressableSegmentedControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableSegmentedControler.swift; sourceTree = "<group>"; };
+		7B7B7DC0E978C0681A327EDD /* Pods-ControlCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlCenter.debug.xcconfig"; path = "Target Support Files/Pods-ControlCenter/Pods-ControlCenter.debug.xcconfig"; sourceTree = "<group>"; };
+		B9BF9DCC436C1E2CCEA4225D /* Pods-ControlCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlCenter.release.xcconfig"; path = "Target Support Files/Pods-ControlCenter/Pods-ControlCenter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,17 +99,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345310DA23DE311100EE3C79 /* login.framework in Frameworks */,
+				A8D6449346F5057431535B1B /* Pods_ControlCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C1AF6A468A82A1F629CA15D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				345310D923DE311000EE3C79 /* login.framework */,
+				21C3E12B2F897D3551986288 /* Pods_ControlCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		345310D423DE2EC000EE3C79 /* PKSlideableController */ = {
+			isa = PBXGroup;
+			children = (
+				345310D523DE2EC000EE3C79 /* PKSlideableController.xib */,
+				345310D623DE2EC000EE3C79 /* PKSlideableController.swift */,
+			);
+			path = PKSlideableController;
+			sourceTree = "<group>";
+		};
+		345310DD23DE39F800EE3C79 /* ControlCenterWidgetPreferencePane */ = {
+			isa = PBXGroup;
+			children = (
+				345310DE23DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.strings */,
+				345310E223DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.swift */,
+				345310E323DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.xib */,
+			);
+			path = ControlCenterWidgetPreferencePane;
+			sourceTree = "<group>";
+		};
 		34691B7323D37C73008EB808 = {
 			isa = PBXGroup;
 			children = (
 				34691B7F23D37C73008EB808 /* ControlCenter */,
 				34691B7E23D37C73008EB808 /* Products */,
+				A3E0D81C8AEC7CD3AB32E398 /* Pods */,
+				2C1AF6A468A82A1F629CA15D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +166,115 @@
 		34691B8123D37C73008EB808 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				34691BBB23D38EB3008EB808 /* PressableSegmentedControler.swift */,
 				34691B8223D37C73008EB808 /* ControlCenterWidget.swift */,
+				34691B8A23D38C4D008EB808 /* ControlCenterItem.swift */,
+				34691BA923D38D24008EB808 /* Bridging-Header.h */,
+				34691B8C23D38CBD008EB808 /* Items */,
+				345310D423DE2EC000EE3C79 /* PKSlideableController */,
+				34691BB523D38DB3008EB808 /* Preferences */,
+				34691BBA23D38E93008EB808 /* Helpers */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		34691B8C23D38CBD008EB808 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				34691B9523D38CBD008EB808 /* Volume */,
+				34691B9123D38CBD008EB808 /* Brightness */,
+				34691B8D23D38CBD008EB808 /* CCDoNotDisturbItem.swift */,
+				34691B8E23D38CBD008EB808 /* CCSleepItem.swift */,
+				34691B8F23D38CBD008EB808 /* CCScreensaverItem.swift */,
+				34691B9023D38CBD008EB808 /* CCLockItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		34691B9123D38CBD008EB808 /* Brightness */ = {
+			isa = PBXGroup;
+			children = (
+				34691B9223D38CBD008EB808 /* CCBrightnessDownItem.swift */,
+				34691B9323D38CBD008EB808 /* CCBrightnessUpItem.swift */,
+				34691B9423D38CBD008EB808 /* CCBrightnessToggleItem.swift */,
+			);
+			path = Brightness;
+			sourceTree = "<group>";
+		};
+		34691B9523D38CBD008EB808 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				34691B9623D38CBD008EB808 /* CCVolumeDownItem.swift */,
+				34691B9723D38CBD008EB808 /* CCVolumeToggleItem.swift */,
+				34691B9823D38CBD008EB808 /* CCVolumeUpItem.swift */,
+				34691B9923D38CBD008EB808 /* CCVolumeMuteItem.swift */,
+			);
+			path = Volume;
+			sourceTree = "<group>";
+		};
+		34691BA523D38D24008EB808 /* KeySenderHelper */ = {
+			isa = PBXGroup;
+			children = (
+				34691BA623D38D24008EB808 /* KeySenderHelper.c */,
+				34691BA723D38D24008EB808 /* KeySenderHelper.h */,
+				34691BA823D38D24008EB808 /* KeySender.swift */,
+			);
+			path = KeySenderHelper;
+			sourceTree = "<group>";
+		};
+		34691BAC23D38D89008EB808 /* ISSoundAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				34691BAD23D38D89008EB808 /* ISSoundAdditions.h */,
+				34691BAE23D38D89008EB808 /* ISSoundAdditions.m */,
+			);
+			path = ISSoundAdditions;
+			sourceTree = "<group>";
+		};
+		34691BAF23D38D89008EB808 /* DKBrightness */ = {
+			isa = PBXGroup;
+			children = (
+				34691BB023D38D89008EB808 /* DKBrightness.swift */,
+			);
+			path = DKBrightness;
+			sourceTree = "<group>";
+		};
+		34691BB523D38DB3008EB808 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				34691BB323D38DAF008EB808 /* Preferences.swift */,
+				345310DD23DE39F800EE3C79 /* ControlCenterWidgetPreferencePane */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		34691BB623D38E36008EB808 /* SystemHelper */ = {
+			isa = PBXGroup;
+			children = (
+				34691BB723D38E36008EB808 /* SystemHelper.h */,
+				34691BB823D38E36008EB808 /* SystemHelper.m */,
+			);
+			path = SystemHelper;
+			sourceTree = "<group>";
+		};
+		34691BBA23D38E93008EB808 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				34691BB623D38E36008EB808 /* SystemHelper */,
+				34691BAF23D38D89008EB808 /* DKBrightness */,
+				34691BAC23D38D89008EB808 /* ISSoundAdditions */,
+				34691BA523D38D24008EB808 /* KeySenderHelper */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A3E0D81C8AEC7CD3AB32E398 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B7B7DC0E978C0681A327EDD /* Pods-ControlCenter.debug.xcconfig */,
+				B9BF9DCC436C1E2CCEA4225D /* Pods-ControlCenter.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,10 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34691B8723D37C73008EB808 /* Build configuration list for PBXNativeTarget "ControlCenter" */;
 			buildPhases = (
+				83C3FE63F2EA130F2A614D88 /* [CP] Check Pods Manifest.lock */,
 				34691B7823D37C73008EB808 /* Sources */,
 				34691B7923D37C73008EB808 /* Frameworks */,
 				34691B7A23D37C73008EB808 /* Resources */,
 				34691B7B23D37C73008EB808 /* Copy widget to destination folder */,
+				345310DC23DE311100EE3C79 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,6 +322,10 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				it,
+				"zh-Hant",
+				tr,
 			);
 			mainGroup = 34691B7323D37C73008EB808;
 			productRefGroup = 34691B7E23D37C73008EB808 /* Products */;
@@ -121,6 +342,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				345310E923DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.xib in Resources */,
+				345310E723DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.strings in Resources */,
+				345310D723DE2EC000EE3C79 /* PKSlideableController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +369,28 @@
 			shellPath = /bin/sh;
 			shellScript = "# Copy widget to destination folder.\necho \"Copying ${PRODUCT_NAME}.pock to destination folder\"\ncp -r $TARGET_BUILD_DIR/$PRODUCT_NAME.pock ~/Library/Application\\ Support/Pock/Widgets/";
 		};
+		83C3FE63F2EA130F2A614D88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ControlCenter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,11 +398,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34691BA123D38CBD008EB808 /* CCVolumeDownItem.swift in Sources */,
+				34691BB123D38D89008EB808 /* ISSoundAdditions.m in Sources */,
+				34691BB223D38D89008EB808 /* DKBrightness.swift in Sources */,
+				34691BA323D38CBD008EB808 /* CCVolumeUpItem.swift in Sources */,
+				34691BA223D38CBD008EB808 /* CCVolumeToggleItem.swift in Sources */,
+				34691BB923D38E36008EB808 /* SystemHelper.m in Sources */,
+				34691B9C23D38CBD008EB808 /* CCScreensaverItem.swift in Sources */,
+				34691BA423D38CBD008EB808 /* CCVolumeMuteItem.swift in Sources */,
+				34691B9D23D38CBD008EB808 /* CCLockItem.swift in Sources */,
+				34691BB423D38DAF008EB808 /* Preferences.swift in Sources */,
+				34691B9A23D38CBD008EB808 /* CCDoNotDisturbItem.swift in Sources */,
+				34691BA023D38CBD008EB808 /* CCBrightnessToggleItem.swift in Sources */,
+				34691BAA23D38D24008EB808 /* KeySenderHelper.c in Sources */,
 				34691B8323D37C73008EB808 /* ControlCenterWidget.swift in Sources */,
+				34691B9E23D38CBD008EB808 /* CCBrightnessDownItem.swift in Sources */,
+				34691BAB23D38D24008EB808 /* KeySender.swift in Sources */,
+				34691B9B23D38CBD008EB808 /* CCSleepItem.swift in Sources */,
+				34691B9F23D38CBD008EB808 /* CCBrightnessUpItem.swift in Sources */,
+				345310D823DE2EC000EE3C79 /* PKSlideableController.swift in Sources */,
+				345310E823DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.swift in Sources */,
+				34691B8B23D38C4D008EB808 /* ControlCenterItem.swift in Sources */,
+				34691BBC23D38EB3008EB808 /* PressableSegmentedControler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		345310DE23DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345310DF23DE39F800EE3C79 /* zh-Hans */,
+				345310E023DE39F800EE3C79 /* en */,
+				345310E123DE39F800EE3C79 /* it */,
+				345310E523DE39F800EE3C79 /* zh-Hant */,
+				345310E623DE39F800EE3C79 /* tr */,
+			);
+			name = ControlCenterWidgetPreferencePane.strings;
+			sourceTree = "<group>";
+		};
+		345310E323DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				345310E423DE39F800EE3C79 /* Base */,
+			);
+			name = ControlCenterWidgetPreferencePane.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		34691B8523D37C73008EB808 /* Debug */ = {
@@ -270,6 +560,7 @@
 		};
 		34691B8823D37C73008EB808 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B7B7DC0E978C0681A327EDD /* Pods-ControlCenter.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -279,13 +570,19 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application\\ Support/Pock/Widgets";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pigigaldi.pock.ControlCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ControlCenter/Sources/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				WRAPPER_EXTENSION = pock;
 			};
 			name = Debug;
 		};
 		34691B8923D37C73008EB808 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9BF9DCC436C1E2CCEA4225D /* Pods-ControlCenter.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,7 +592,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application\\ Support/Pock/Widgets";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pigigaldi.pock.ControlCenter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ControlCenter/Sources/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				WRAPPER_EXTENSION = pock;
 			};
 			name = Release;

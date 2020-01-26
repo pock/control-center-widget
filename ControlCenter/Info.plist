@@ -24,5 +24,7 @@
 	<string>ControlCenter.ControlCenterWidget</string>
 	<key>PKWidgetAuthor</key>
 	<string>Pierluigi Galdi</string>
+	<key>PKWidgetPreferenceClass</key>
+	<string>ControlCenter.ControlCenterWidgetPreferencePane</string>
 </dict>
 </plist>

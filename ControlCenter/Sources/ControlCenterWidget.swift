@@ -18,7 +18,7 @@ class ControlCenterWidget: PKWidget {
     
     /// Core
     // Use controlsRaw to find volume and brightness items. Using control will show same icon for both vol(and brightness) up and down in slideableController when only 1 of up/down is enabled
-    private var controlsRaw: [ControlCenterItem] {
+    private lazy var controlsRaw: [ControlCenterItem] = {
         return [
             CCSleepItem(parentWidget: self),
             CCLockItem(parentWidget: self),
@@ -32,7 +32,7 @@ class ControlCenterWidget: PKWidget {
             CCVolumeToggleItem(parentWidget: self),
             CCVolumeMuteItem(parentWidget: self)
         ]
-    }
+    }()
     
     private var controls: [ControlCenterItem] {
         return controlsRaw.filter({ $0.enabled })
@@ -109,9 +109,15 @@ extension ControlCenterWidget {
         slideableController = PKSlideableController.load()
         switch item.self {
         case is CCVolumeUpItem, is CCVolumeDownItem, is CCVolumeMuteItem, is CCVolumeToggleItem:
-            slideableController?.set(downItem: CCVolumeDownItem(parentWidget: self), upItem: CCVolumeUpItem(parentWidget: self))
+            slideableController?.set(
+                downItem: controlsRaw.first(where: { $0 is CCVolumeDownItem }),
+                upItem: controlsRaw.first(where: { $0 is CCVolumeUpItem })
+            )
         case is CCBrightnessUpItem, is CCBrightnessDownItem, is CCBrightnessToggleItem:
-            slideableController?.set(downItem: CCBrightnessDownItem(parentWidget: self), upItem: CCBrightnessUpItem(parentWidget: self))
+            slideableController?.set(
+                downItem: controlsRaw.first(where: { $0 is CCBrightnessDownItem }),
+                upItem: controlsRaw.first(where: { $0 is CCBrightnessUpItem })
+            )
         default:
             return
         }

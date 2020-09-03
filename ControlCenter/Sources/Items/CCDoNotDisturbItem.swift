@@ -14,8 +14,6 @@ class CCDoNotDisturbItem: ControlCenterItem {
     
     override var title: String { return "do-not-disturb" }
     
-    override var icon:  NSImage { return NSImage(named: title)! }
-    
     override func action() -> Any? {
         if !Defaults[.isDoNotDisturb] {
             enableDND()

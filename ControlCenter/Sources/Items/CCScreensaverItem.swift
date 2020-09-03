@@ -15,8 +15,6 @@ class CCScreensaverItem: ControlCenterItem {
     
     override var title: String { return "screensaver" }
     
-    override var icon:  NSImage { return NSImage(named: title)! }
-    
     override func action() -> Any? {
         let screensaverScript = #"tell application "ScreenSaverEngine" to run"#
         let script = NSAppleScript(source: screensaverScript)

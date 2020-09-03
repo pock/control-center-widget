@@ -31,7 +31,8 @@ class ControlCenterItem {
     
     var icon: NSImage {
         get {
-            fatalError("Property `icon` must be override in subclasses.")
+            let bundle = Bundle(for: ControlCenterWidget.self)
+            return bundle.image(forResource: title) ?? NSImage(named: NSImage.statusUnavailableName)!
         }
     }
     

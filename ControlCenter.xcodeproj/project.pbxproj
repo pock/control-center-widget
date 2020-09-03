@@ -34,6 +34,7 @@
 		34691BB423D38DAF008EB808 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691BB323D38DAF008EB808 /* Preferences.swift */; };
 		34691BB923D38E36008EB808 /* SystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34691BB823D38E36008EB808 /* SystemHelper.m */; };
 		34691BBC23D38EB3008EB808 /* PressableSegmentedControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691BBB23D38EB3008EB808 /* PressableSegmentedControler.swift */; };
+		34F764922501637700310698 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F764912501637700310698 /* Media.xcassets */; };
 		A8D6449346F5057431535B1B /* Pods_ControlCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C3E12B2F897D3551986288 /* Pods_ControlCenter.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		34691BB723D38E36008EB808 /* SystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemHelper.h; sourceTree = "<group>"; };
 		34691BB823D38E36008EB808 /* SystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemHelper.m; sourceTree = "<group>"; };
 		34691BBB23D38EB3008EB808 /* PressableSegmentedControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableSegmentedControler.swift; sourceTree = "<group>"; };
+		34F764912501637700310698 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		7B7B7DC0E978C0681A327EDD /* Pods-ControlCenter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlCenter.debug.xcconfig"; path = "Target Support Files/Pods-ControlCenter/Pods-ControlCenter.debug.xcconfig"; sourceTree = "<group>"; };
 		B9BF9DCC436C1E2CCEA4225D /* Pods-ControlCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlCenter.release.xcconfig"; path = "Target Support Files/Pods-ControlCenter/Pods-ControlCenter.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 				345310D423DE2EC000EE3C79 /* PKSlideableController */,
 				34691BB523D38DB3008EB808 /* Preferences */,
 				34691BBA23D38E93008EB808 /* Helpers */,
+				34F764912501637700310698 /* Media.xcassets */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			files = (
 				345310E923DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.xib in Resources */,
 				345310E723DE39F800EE3C79 /* ControlCenterWidgetPreferencePane.strings in Resources */,
+				34F764922501637700310698 /* Media.xcassets in Resources */,
 				345310D723DE2EC000EE3C79 /* PKSlideableController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,6 +567,7 @@
 			baseConfigurationReference = 7B7B7DC0E978C0681A327EDD /* Pods-ControlCenter.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 788D9WZ9Z3;
@@ -585,6 +590,7 @@
 			baseConfigurationReference = B9BF9DCC436C1E2CCEA4225D /* Pods-ControlCenter.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 788D9WZ9Z3;

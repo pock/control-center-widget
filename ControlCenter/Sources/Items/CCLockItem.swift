@@ -15,8 +15,6 @@ class CCLockItem: ControlCenterItem {
     
     override var title: String { return "lock" }
     
-    override var icon:  NSImage { return NSImage(named: title)! }
-    
     override func action() -> Any? {
         SystemHelper.lock()
         return nil

@@ -19,6 +19,8 @@ class CCVolumeUpItem: ControlCenterItem {
     
     override var icon:  NSImage { return NSImage(named: NSImage.touchBarVolumeUpTemplateName)! }
     
+	private var valueCorrected: Float = 0
+	
     override func action() -> Any? {
         Defaults[.isVolumeMute] = false
         key.send()
@@ -27,14 +29,23 @@ class CCVolumeUpItem: ControlCenterItem {
     }
     
     override func longPressAction() {
-        parentWidget?.showSlideableController(for: self, currentValue: NSSound.systemVolume())
+        parentWidget?.showSlideableController(for: self, currentValue: valueCorrected)
     }
     
     override func didSlide(at value: Double) {
-        Defaults[.isVolumeMute] = false
-        NSSound.setSystemVolume(Float(value))
+		/// I've noticed that if you try to quickly flick the slider to the left to mute the volume, it often doesn't go all the way
+		/// to the left which makes the volume really low, but not muted.
+		/// This part fixes this behaviour by muting the volume when the slider is almost fully to the left.
+		if value < 0.07 {
+			valueCorrected = 0
+			NSSound.setSystemVolume(0.01)
+			Defaults[.isVolumeMute] = true
+		}else {
+			valueCorrected = Float(value)
+			NSSound.setSystemVolume(valueCorrected)
+			Defaults[.isVolumeMute] = false
+		}
         NSWorkspace.shared.notificationCenter.post(name: .shouldReloadControlCenterWidget, object: nil)
-        // DK_OSDUIHelper.showHUD(type: NSSound.isMuted() ? .mute : .volume, filled: CUnsignedInt(NSSound.systemVolume() * 16))
     }
     
 }

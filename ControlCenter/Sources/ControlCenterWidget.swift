@@ -78,7 +78,7 @@ class ControlCenterWidget: PKWidget {
             })
             return
         }
-        segmentedControl = PressableSegmentedControl(images: items, trackingMode: .momentary, target: self, action: #selector(tap(_:)))
+        segmentedControl = PressableSegmentedControl(images: items, trackingMode: .selectOne, target: self, action: #selector(tap(_:)))
         segmentedControl.delegate = self
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         segmentedControl.autoresizingMask = .width
@@ -88,6 +88,13 @@ class ControlCenterWidget: PKWidget {
         segmentedControl.didPressAt = { [unowned self] location in
             self.longTap(at: location)
         }
+    }
+    
+    private func tap(at location : CGPoint) {
+        let index = Int(ceil(location.x / (segmentedControl.frame.width / CGFloat(controls.count)))) - 1
+        guard (0..<controls.count).contains(index) else { return }
+        segmentedControl.selectedSegment = index
+        controls[index].action()
     }
     
     @objc private func tap(_ sender: NSSegmentedControl) {
@@ -134,3 +141,40 @@ extension ControlCenterWidget: PressableSegmentedControlDelegate {
         slideableController?.set(initialLocation: location)
     }
 }
+
+extension ControlCenterWidget: PKScreenEdgeMouseDelegate{
+    
+    func screenEdgeController(_ controller: PKScreenEdgeController, mouseEnteredAtLocation location: NSPoint, in view: NSView) {
+        let location = view.convert(location, to: segmentedControl)
+        let index = Int(ceil(location.x / (segmentedControl.frame.width / CGFloat(controls.count)))) - 1
+        guard (0..<controls.count).contains(index),
+              segmentedControl.bounds.contains(location)
+        else {
+            if segmentedControl.selectedSegment != -1 { segmentedControl.selectedSegment = -1 }
+            return
+        }
+        if segmentedControl.selectedSegment != index { segmentedControl.selectedSegment = index }
+    }
+    
+    func screenEdgeController(_ controller: PKScreenEdgeController, mouseMovedAtLocation location: NSPoint, in view: NSView) {
+        let location = view.convert(location, to: segmentedControl)
+        let index = Int(ceil(location.x / (segmentedControl.frame.width / CGFloat(controls.count)))) - 1
+        guard (0..<controls.count).contains(index),
+              segmentedControl.bounds.contains(location)
+        else {
+            if segmentedControl.selectedSegment != -1 { segmentedControl.selectedSegment = -1 }
+            return
+        }
+        if segmentedControl.selectedSegment != index { segmentedControl.selectedSegment = index }
+    }
+    
+    func screenEdgeController(_ controller: PKScreenEdgeController, mouseClickAtLocation location: NSPoint, in view: NSView) {
+        let location = view.convert(location, to: segmentedControl)
+        tap(at: location)
+    }
+    
+    func screenEdgeController(_ controller: PKScreenEdgeController, mouseExitedAtLocation location: NSPoint, in view: NSView) {
+        if segmentedControl.selectedSegment != -1 { segmentedControl.selectedSegment = -1 }
+    }
+}
+

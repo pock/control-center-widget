@@ -33,6 +33,7 @@ class PressableSegmentedControl: NSSegmentedControl {
         timer = Timer.scheduledTimer(withTimeInterval: minimumPressDuration, repeats: false, block: { [unowned self] _ in
             self.canMove = true
             self.didPressAt?(self.location)
+            self.selectedSegment = -1
         })
     }
     
@@ -50,5 +51,6 @@ class PressableSegmentedControl: NSSegmentedControl {
         canMove  = false
         location = .zero
         super.touchesEnded(with: event)
+        self.selectedSegment = -1
     }
 }

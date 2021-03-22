@@ -173,11 +173,11 @@
 		34691B8C23D38CBD008EB808 /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				34691B9523D38CBD008EB808 /* Volume */,
 				34691B9123D38CBD008EB808 /* Brightness */,
+				34691B9523D38CBD008EB808 /* Volume */,
 				34691B8D23D38CBD008EB808 /* CCDoNotDisturbItem.swift */,
-				34691B8E23D38CBD008EB808 /* CCSleepItem.swift */,
 				34691B8F23D38CBD008EB808 /* CCScreensaverItem.swift */,
+				34691B8E23D38CBD008EB808 /* CCSleepItem.swift */,
 				34691B9023D38CBD008EB808 /* CCLockItem.swift */,
 			);
 			path = Items;
@@ -187,8 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				34691B9223D38CBD008EB808 /* CCBrightnessDownItem.swift */,
-				34691B9323D38CBD008EB808 /* CCBrightnessUpItem.swift */,
 				34691B9423D38CBD008EB808 /* CCBrightnessToggleItem.swift */,
+				34691B9323D38CBD008EB808 /* CCBrightnessUpItem.swift */,
 			);
 			path = Brightness;
 			sourceTree = "<group>";
@@ -196,10 +196,10 @@
 		34691B9523D38CBD008EB808 /* Volume */ = {
 			isa = PBXGroup;
 			children = (
+				34691B9923D38CBD008EB808 /* CCVolumeMuteItem.swift */,
 				34691B9623D38CBD008EB808 /* CCVolumeDownItem.swift */,
 				34691B9723D38CBD008EB808 /* CCVolumeToggleItem.swift */,
 				34691B9823D38CBD008EB808 /* CCVolumeUpItem.swift */,
-				34691B9923D38CBD008EB808 /* CCVolumeMuteItem.swift */,
 			);
 			path = Volume;
 			sourceTree = "<group>";

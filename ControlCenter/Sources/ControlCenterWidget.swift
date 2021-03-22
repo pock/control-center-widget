@@ -20,17 +20,17 @@ class ControlCenterWidget: PKWidget {
     // Use controlsRaw to find volume and brightness items. Using control will show same icon for both vol(and brightness) up and down in slideableController when only 1 of up/down is enabled
     private lazy var controlsRaw: [ControlCenterItem] = {
         return [
-            CCSleepItem(parentWidget: self),
-            CCLockItem(parentWidget: self),
-            CCScreensaverItem(parentWidget: self),
-            CCDoNotDisturbItem(parentWidget: self),
             CCBrightnessDownItem(parentWidget: self),
-            CCBrightnessUpItem(parentWidget: self),
             CCBrightnessToggleItem(parentWidget: self),
+            CCBrightnessUpItem(parentWidget: self),
+            CCVolumeMuteItem(parentWidget: self),
             CCVolumeDownItem(parentWidget: self),
-            CCVolumeUpItem(parentWidget: self),
             CCVolumeToggleItem(parentWidget: self),
-            CCVolumeMuteItem(parentWidget: self)
+            CCVolumeUpItem(parentWidget: self),
+            CCDoNotDisturbItem(parentWidget: self),
+            CCScreensaverItem(parentWidget: self),
+            CCSleepItem(parentWidget: self),
+            CCLockItem(parentWidget: self)
         ]
     }()
     
